@@ -44,12 +44,12 @@ function Search({}: Props) {
   }, [startDate, endDate]);
 
   const guessLabel = useMemo(() => {
-    if (guestCount) {
+    if (guestCount != null) {
       return `${guestCount} Guests`;
     }
 
     return "Add Guests";
-  }, []);
+  }, [guestCount]);
 
   return (
     <div

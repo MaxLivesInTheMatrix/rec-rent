@@ -20,7 +20,7 @@ const formattedCities = cityData.map((city) => ({
 
 const popularCities = [
     ['Mountain View', 'CA'],
-    ['Lake Tahoe', 'NV', 39.0968, -120.0324],
+    ['South Lake Tahoe', 'CA'],
     ['New York City', 'NY'],
     ['Los Angeles', 'CA'],
     ['Chicago', 'IL'],
