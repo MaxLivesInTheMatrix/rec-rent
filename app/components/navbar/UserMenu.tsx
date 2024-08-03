@@ -15,13 +15,13 @@ const UserMenu = () => {
     return (
         <div className="relative">
             <div className="flex items-center gap-3">
+                <div onClick={() => {}} className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer">
+                    Join RecRent!
+                </div>
                 <button
                     onClick={toggleOpen}
                     className="p-4 md:py-1 md:px-3 flex items-center gap-3 rounded-full cursor-pointer border border-white hover:shadow-md hover:border-neutral-200 transition ease-in-out duration-200"
                 >
-                    <div onClick={() => {}} className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer">
-                        Join RecRent!
-                    </div>
                     <div className="hidden md:block">
                         <Avatar />
                     </div>
