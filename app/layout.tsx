@@ -3,7 +3,7 @@ import "./globals.css";
 
 import Navbar from "./components/navbar/NavBar";
 import SearchModal from "./components/models/searchmodel";
-export const metadata: Metadata = {
+export const metadata = {
   title: "Rec-Rent",
   description: "Peer to peer recreational rentals!",
 };
@@ -22,6 +22,7 @@ export default function RootLayout({
       <body className={font.className}>
         <Navbar />
         <SearchModal />
+        
         {children}
       </body>
     </html>

@@ -1,5 +1,6 @@
 'use client';
 
+import Categories from "./Categories";
 import Container from "../Container";
 import Logo from "./Logo"
 import Search from "./Search";
@@ -14,10 +15,12 @@ const Navbar = () => {
                         <Logo />
                         <Search />
                         <UserMenu />
-                        <SearchModal />
+                        {/* <SearchModal /> */}
+                        
                     </div>
                 </Container>
             </div>
+            <Categories />
         </div>
     );
 }

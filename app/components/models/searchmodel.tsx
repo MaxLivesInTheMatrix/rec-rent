@@ -26,7 +26,7 @@ type Props = {};
 function SearchModal({}: Props) {
   const router = useRouter();
   const params = useSearchParams();
-  const searchModel = useSearchModal();
+  const searchModal = useSearchModal();
 
   const [location, setLocation] = useState<CountrySelectValue>();
   const [step, setStep] = useState(STEPS.LOCATION);
@@ -91,12 +91,12 @@ function SearchModal({}: Props) {
     );
 
     setStep(STEPS.LOCATION);
-    searchModel.onClose();
+    searchModal.onClose();
 
     router.push(url);
   }, [
     step,
-    searchModel,
+    searchModal,
     location,
     router,
     guestCount,
@@ -185,8 +185,8 @@ function SearchModal({}: Props) {
 
   return (
     <Modal
-      isOpen={searchModel.isOpen}
-      onClose={searchModel.onClose}
+      isOpen={searchModal.isOpen}
+      onClose={searchModal.onClose}
       onSubmit={onSubmit}
       secondaryAction={step === STEPS.LOCATION ? undefined : onBack}
       secondaryActionLabel={secondActionLabel}
