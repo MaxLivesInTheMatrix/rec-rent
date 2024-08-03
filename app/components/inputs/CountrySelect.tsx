@@ -34,9 +34,9 @@ function CountrySelect({ value, onChange, limit = 50 }: Props) {
 
   useEffect(() => {
     const popularCities = getPopularCities().map(city => ({
-      value: city.city,
+      value: String(city.city),
       label: city.city,
-      latlng: [city.lat, city.lng],
+      latlng: [Number(city.lat), Number(city.lng)],
       state: city.state,
       country: city.country,
     }));
@@ -50,17 +50,17 @@ function CountrySelect({ value, onChange, limit = 50 }: Props) {
         city.city.toLowerCase().includes(inputValue.toLowerCase())
       ).slice(0, limit);
       setOptions(filteredOptions.map(city => ({
-        value: city.city,
+        value: String(city.city),
         label: city.city,
-        latlng: [city.lat, city.lng],
+        latlng: [Number(city.lat), Number(city.lng)],
         state: city.state,
         country: city.country,
       })));
     } else {
       const popularCities = getPopularCities().map(city => ({
-        value: city.city,
+        value: String(city.city),
         label: city.city,
-        latlng: [city.lat, city.lng],
+        latlng: [Number(city.lat), Number(city.lng)],
         state: city.state,
         country: city.country,
       }));

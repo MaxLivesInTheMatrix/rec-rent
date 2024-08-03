@@ -20,8 +20,8 @@ const formattedCities = cityData.map((city) => ({
 
 const popularCities = [
     ['Mountain View', 'CA'],
-    ['Lake Tahoe', 'CA'],
-    ['New York', 'NY'],
+    ['Lake Tahoe', 'NV', 39.0968, -120.0324],
+    ['New York City', 'NY'],
     ['Los Angeles', 'CA'],
     ['Chicago', 'IL'],
     ['Houston', 'TX'],
@@ -68,9 +68,9 @@ const useCities = () => {
   };
 
   const getPopularCities = () => {
-    return popularCities.map(([cityName, state]) => {
+    return popularCities.map(([cityName, state, lat, lng]) => {
       const city = formattedCities.find(city => city.city === cityName && city.state === state);
-      return city || { country: 'US', city: cityName, lat: 0, lng: 0, state };
+      return city || { country: 'US', city: cityName, lat: lat || 0, lng: lng || 0, state };
     });
   };
 
@@ -83,4 +83,3 @@ const useCities = () => {
 };
 
 export default useCities;
-
