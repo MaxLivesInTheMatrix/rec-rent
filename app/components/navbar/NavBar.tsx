@@ -4,6 +4,7 @@ import Container from "../Container";
 import Logo from "./Logo"
 import Search from "./Search";
 import UserMenu from "./UserMenu";
+import SearchModal from "../../components/models/searchmodel";
 const Navbar = () => {
     return (
         <div className="fixed w-full bg-white z-10 shadow-sm">
@@ -13,6 +14,7 @@ const Navbar = () => {
                         <Logo />
                         <Search />
                         <UserMenu />
+                        <SearchModal />
                     </div>
                 </Container>
             </div>
