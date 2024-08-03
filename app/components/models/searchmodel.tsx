@@ -12,7 +12,7 @@ import { Range } from "react-date-range";
 import Heading from "../Heading";
 import Calendar from "../inputs/Calendar";
 import Counter from "../inputs/Counter";
-import CountrySelect, { CountrySelectValue } from "../inputs/CountrySelect";
+import CountrySelect, { CitiesSelectValue } from "../inputs/CountrySelect";
 import Modal from "./model";
 
 enum STEPS {
@@ -28,7 +28,7 @@ function SearchModal({}: Props) {
   const params = useSearchParams();
   const searchModal = useSearchModal();
 
-  const [location, setLocation] = useState<CountrySelectValue>();
+  const [location, setLocation] = useState<CitiesSelectValue>();
   const [step, setStep] = useState(STEPS.LOCATION);
   const [guestCount, setGuestCount] = useState(1);
   const [dateRange, setDateRange] = useState<Range>({
@@ -125,7 +125,7 @@ function SearchModal({}: Props) {
       />
       <CountrySelect
         value={location}
-        onChange={(value) => setLocation(value as CountrySelectValue)}
+        onChange={(value) => setLocation(value as CitiesSelectValue)}
       />
       <hr />
       <Map center={location?.latlng} />

@@ -1,6 +1,6 @@
 "use client";
 
-import useCountries from "../../hook/useCountries";
+import useCities from "../../hook/useCities";
 import useSearchModal from "../../hook/useSearchModal";
 import { differenceInDays } from "date-fns";
 import { useSearchParams } from "next/navigation";
@@ -12,7 +12,7 @@ type Props = {};
 function Search({}: Props) {
   const searchModel = useSearchModal();
   const params = useSearchParams();
-  const { getByValue } = useCountries();
+  const { getByValue } = useCities();
 
   const locationValue = params?.get("locationValue");
   const startDate = params?.get("startDate");
@@ -21,7 +21,7 @@ function Search({}: Props) {
 
   const locationLabel = useMemo(() => {
     if (locationValue) {
-      return getByValue(locationValue as string)?.label;
+      return getByValue(locationValue as string)?.city;
     }
 
     return "Somewhere";
