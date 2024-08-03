@@ -1,9 +1,10 @@
 import { TbBeach, TbSailboat, TbSailboat2, TbSpeedboat, TbKayak} from "react-icons/tb";
-import { GiWaterSplash, GiFullMotorcycleHelmet, GiUnicycle, GiSnowboard, } from "react-icons/gi";
-import { FaTrailer } from "react-icons/fa";
+import { GiWaterSplash, GiFullMotorcycleHelmet, GiUnicycle, GiSnowboard, GiForestCamp} from "react-icons/gi";
+import { FaTrailer, FaBicycle } from "react-icons/fa";
 
 import Container from "../Container";
 import CategoryBox from "../CategoryBox";
+import { usePathname, useSearchParams } from "next/navigation";
 
 export const categories = [
     {
@@ -19,36 +20,51 @@ export const categories = [
     {
         label : 'JetSki',
         icon: GiWaterSplash,
-        description : 'This is a water vessel'
+        description : 'This is a small, quick, motorized water vessel'
     },
     {
         label : 'Dirtbike/ATV',
         icon: GiFullMotorcycleHelmet,
-        description : "This is a water vessel"
+        description : "Off-roading vehicles"
     },
     {
         label : 'Trailer',
         icon: FaTrailer,
-        description : "This is a water vessel"
+        description : "Towing Trailers"
     },
     {
         label : 'Winter Sports',
         icon: GiSnowboard,
-        description : "This is a water vessel"
+        description : "Winter Sports Equipment"
     },
     {
         label : 'Bikes',
-        icon: GiUnicycle,
-        description : "This is a water vessel"
+        icon: FaBicycle,
+        description : "Two wheeled vehicles"
+    },
+    {
+        label : 'Camping',
+        icon: GiForestCamp,
+        description : "Tents, etc"
     },
     {
         label : 'Other',
         icon: TbBeach,
-        description : "This is a water vessel"
+        description : "Surfboards, skateboards, etc"
     },
 
 ]
 const Categories = () => {
+    const params = useSearchParams();
+    const category = params?.get('category');
+    const pathname = usePathname();
+
+    const isMainPage = pathname == "/";
+
+    if (!isMainPage){
+        return null;
+    }
+
     return (
         <Container>
             <div
@@ -58,7 +74,7 @@ const Categories = () => {
                     <CategoryBox
                      key = {item.label}
                      label = {item.label}
-                     description = {item.description}
+                     selected = {category == item.label}
                      icon = {item.icon}
                      />
                 ) )}
