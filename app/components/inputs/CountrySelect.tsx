@@ -21,7 +21,7 @@ function CountrySelect({ value, onChange }: Props) {
   const { getAll } = useCountries();
 
   return (
-    <div>
+    <div className="z-[10000]">
       <Select
         placeholder="Somewhere"
         isClearable
