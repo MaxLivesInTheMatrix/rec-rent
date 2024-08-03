@@ -31,8 +31,6 @@ function SearchModal({}: Props) {
   const [location, setLocation] = useState<CountrySelectValue>();
   const [step, setStep] = useState(STEPS.LOCATION);
   const [guestCount, setGuestCount] = useState(1);
-  const [roomCount, setRoomCount] = useState(1);
-  const [bathroomCount, setBathroomCount] = useState(1);
   const [dateRange, setDateRange] = useState<Range>({
     startDate: new Date(),
     endDate: new Date(),
@@ -70,8 +68,6 @@ function SearchModal({}: Props) {
       ...currentQuery,
       locationValue: location?.value,
       guestCount,
-      roomCount,
-      bathroomCount,
     };
 
     if (dateRange.startDate) {
@@ -100,8 +96,6 @@ function SearchModal({}: Props) {
     location,
     router,
     guestCount,
-    roomCount,
-    bathroomCount,
     dateRange,
     onNext,
     params,
@@ -164,21 +158,6 @@ function SearchModal({}: Props) {
           subtitle="How many guests are coming?"
         />
         <hr />
-        <Counter
-          onChange={(value) => setRoomCount(value)}
-          value={roomCount}
-          title="Rooms"
-          subtitle="How many rooms do you need?"
-        />
-        <hr />
-        <Counter
-          onChange={(value) => {
-            setBathroomCount(value);
-          }}
-          value={bathroomCount}
-          title="Bathrooms"
-          subtitle="How many bahtrooms do you need?"
-        />
       </div>
     );
   }
