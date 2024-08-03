@@ -2,8 +2,8 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "./components/navbar/NavBar";
-
-export const metadata: Metadata = {
+import SearchModal from "./components/models/searchmodel";
+export const metadata = {
   title: "Rec-Rent",
   description: "Peer to peer recreational rentals!",
 };
@@ -21,6 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Navbar />
+        <SearchModal />
+        
         {children}
       </body>
     </html>
