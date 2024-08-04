@@ -23,13 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={`${font.className} flex flex-col min-h-screen`}>
         <ClientOnly>
           <RegisterModal />
           <Navbar />
           <SearchModal />
         </ClientOnly>
-        {children}
+        <main className="flex-grow container mx-auto px-4">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
