@@ -29,7 +29,7 @@ const Listing: React.FC<ListingProps> = ({
                 </div>
                 <div className="flex flex-col justify-between flex-grow">
                     <div className="px-6 py-4 flex-grow">
-                        <div className="font-black text-xl mb-2 text-black">{title}</div>
+                        <div className="font-black text-xl mb-2 text-black line-clamp-3">{title}</div>
                         <p className="text-gray-600 text-base">
                             {rating} Stars ★ ({reviews} Reviews)
                         </p>
