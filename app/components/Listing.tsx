@@ -35,7 +35,7 @@ const Listing: React.FC<ListingProps> = ({
                         <p className="text-gray-600 text-base">
                             {rating} Stars ★ ({reviews} Reviews)
                         </p>
-                        <p className="text-gray-600 text-base">
+                        <p className="text-gray-600 text-sm">
                             {location}
                         </p>
                     </div>

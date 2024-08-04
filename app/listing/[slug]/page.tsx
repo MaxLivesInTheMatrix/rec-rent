@@ -3,14 +3,20 @@
 import mock from "../../../public/mock.json";
 import ListingGuests from "../../components/ListingGuests";
 import ListingDates from "../../components/ListingDates";
+import useRegisterModal from "@/app/hooks/useRegisterModal";
 
 export default function Listing({ params }: { params: { slug: string } }) {
+    const registerModal = useRegisterModal();
     const id = params.slug;
 
     const product = mock.find((item) => {
         console.log("Comparing item id:", item.id.toString(), "with slug id:", id);
         return item.id.toString() === id;
     });
+
+    const bookAction = () => {
+        registerModal.onOpen();
+    }
 
     if (!product) {
         return <div className="pt-28 flex flex-col items-center">Product not found</div>;
@@ -41,7 +47,7 @@ export default function Listing({ params }: { params: { slug: string } }) {
                             <p className="text-md text-gray-600 font-semibold">${product.price} per day</p>
                             <ListingGuests />
                             <ListingDates />
-                            <button className="bg-[#81bf5c] text-white text-lg font-semibold py-2 my-4 px-4 rounded-lg">Book Now</button>
+                            <button onClick={bookAction} className="bg-[#81bf5c] text-white text-lg font-semibold py-2 my-4 px-4 rounded-lg">Book Now</button>
                         </div>
                     </div>
                 </div>
