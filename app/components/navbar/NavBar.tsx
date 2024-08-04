@@ -11,7 +11,9 @@ import {User} from '@prisma/client';
 interface NavbarProps{
   currentUser?: User | null;
 }
-
+interface UserMenuProps {
+  currentUser?: User | null
+}
 const Navbar: React.FC<NavbarProps> = ({
   currentUser,
 }) => {
