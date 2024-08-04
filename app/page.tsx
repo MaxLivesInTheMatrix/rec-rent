@@ -17,8 +17,6 @@ export default function Home() {
 
     const category = searchParams.get('category');
     const locationValue = searchParams.get('locationValue');
-    console.log("Category:", category);
-    console.log("Location Value:", locationValue);
 
     let filtered = mock;
 

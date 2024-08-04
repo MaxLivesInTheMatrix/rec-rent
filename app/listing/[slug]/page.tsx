@@ -10,7 +10,6 @@ export default function Listing({ params }: { params: { slug: string } }) {
     const id = params.slug;
 
     const product = mock.find((item) => {
-        console.log("Comparing item id:", item.id.toString(), "with slug id:", id);
         return item.id.toString() === id;
     });
 
