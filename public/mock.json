@@ -7,7 +7,7 @@
         "price": 300,
         "imageUrl": ["https://static.toiimg.com/photo/100182318.cms"],
         "id": 231244,
-        "category": "Camping",
+        "catagory": "Camping",
         "description": "The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont, based on the 1982 Stephen King novella Rita Hayworth and Shawshank Redemption. It tells the story of banker Andy Dufresne (Tim Robbins), who is sentenced to life in Shawshank State Penitentiary for the murders of his wife and her lover, despite his claims of innocence. Over the following two decades, he befriends a fellow prisoner, contraband smuggler Ellis \"Red\" Redding (Morgan Freeman), and becomes instrumental in a money-laundering operation led by the prison warden Samuel Norton (Bob Gunton)."
     },
     {
@@ -18,7 +18,7 @@
         "price": 302,
         "imageUrl": ["https://plasticboats.com/wp-content/uploads/2018/10/Backwater-8545.jpg"],
         "id": 231234,
-        "category": "Kayak/Canoe",
+        "catagory": "Kayak/Canoe",
         "description": "This is a test description"
     },
     {
@@ -29,7 +29,7 @@
         "price": 450,
         "imageUrl": ["https://scontent-sjc3-1.xx.fbcdn.net/v/t31.18172-8/28516436_1725991080798417_3773207896027491208_o.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=AnZf30mLTCoQ7kNvgEzSCdk&_nc_ht=scontent-sjc3-1.xx&oh=00_AYDF7Om24X2lP7q2Ua4a_fXow5obLuPzyNmUD6Emn9QVhQ&oe=66D64EE5"],
         "id": 231245,
-        "category": "Bikes",
+        "catagory": "Bikes",
         "description": "Inception is a 2010 science fiction action film written and directed by Christopher Nolan, who also produced the film with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. He is offered a chance to have his criminal history erased as payment for the implantation of another person's idea into a target's subconscious."
     },
     {
@@ -40,7 +40,7 @@
         "price": 5650,
         "imageUrl": ["https://cdn.vox-cdn.com/thumbor/k5TP76weFAWmXlNHFVrfGUR1XWM=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21727335/image006.jpg"],
         "id": 122245,
-        "category": "Boat",
+        "catagory": "Boat",
         "description": "Boating like a boss."
     },
     {
@@ -51,7 +51,7 @@
         "price": 120,
         "imageUrl": ["https://m.media-amazon.com/images/I/71dVGZOsl6L._AC_UY1000_.jpg"],
         "id": 231246,
-        "category": "Camping",
+        "catagory": "Camping",
         "description": "A highly durable and lightweight backpack perfect for long hiking trips. Waterproof and equipped with multiple compartments for easy organization."
     },
     {
@@ -62,7 +62,7 @@
         "price": 80,
         "imageUrl": ["https://s3.amazonaws.com/images.gearjunkie.com/uploads/2022/05/DSC1108.jpg"],
         "id": 231247,
-        "category": "Camping",
+        "catagory": "Camping",
         "description": "Stay warm and comfortable with this ultra-lightweight sleeping bag. Perfect for all seasons and easy to pack for any camping adventure."
     },
     {
@@ -73,7 +73,7 @@
         "price": 350,
         "imageUrl": ["https://cdn.thewirecutter.com/wp-content/media/2021/12/electricscooter-2048px-1521.jpeg?auto=webp&quality=75&crop=4:3,smart&width=1024"],
         "id": 231248,
-        "category": "Bikes",
+        "catagory": "Bikes",
         "description": "Experience the city in style with this foldable electric scooter. Featuring a long-range battery, smart display, and smooth ride."
     },
     {
@@ -84,7 +84,7 @@
         "price": 200,
         "imageUrl": ["https://shop.krazybins.com/cdn/shop/files/81_NFRKp7EL._AC_SL1500.jpg?v=1715782375&width=1500"],
         "id": 231249,
-        "category": "Other",
+        "catagory": "Other",
         "description": "Glide over any terrain with this all-terrain hoverboard. Equipped with LED lights and a Bluetooth speaker for a fun and exciting ride."
     },
     {
@@ -95,7 +95,7 @@
         "price": 60,
         "imageUrl": ["https://www.kinsheyoga.com/cdn/shop/files/LongShot-Blue1jpeg.jpg?v=1712876494&width=1445"],
         "id": 231250,
-        "category": "Other",
+        "catagory": "Other",
         "description": "Enhance your yoga practice with this premium, non-slip yoga mat. Made from eco-friendly materials and designed for optimal comfort and durability."
     }
 ]
