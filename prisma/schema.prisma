@@ -16,7 +16,7 @@ datasource db {
 model User{
   id String @id @default(auto()) @map("_id") @db.ObjectId
   name String?
-  DriversLicense String? @unique
+ // DriversLicense String?
   email String? @unique
   emailVerified DateTime?
   image String?
