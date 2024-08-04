@@ -165,8 +165,8 @@ function RentModal({}: Props) {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Share some basics about your place"
-          subtitle="What amenities do you have?"
+          title="Share some basics about your rental"
+          subtitle=""
         />
         <Counter
           title="Guests"
@@ -248,7 +248,7 @@ function RentModal({}: Props) {
     <Modal
       disabled={isLoading}
       isOpen={rentModel.isOpen}
-      title="Airbnb your home!"
+      title="Rent out your equipment!"
       actionLabel={actionLabel}
       onSubmit={handleSubmit(onSubmit)}
       secondaryActionLabel={secondActionLabel}
