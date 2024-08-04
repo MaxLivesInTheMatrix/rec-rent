@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div className="pt-28 flex flex-col items-center">
       <div className="text-rose-500 text-2xl hidden">Hello Rent-Rec!</div>
-      <div className="pt-20 px-8 flex flex-wrap justify-center gap-8 w-full max-w-screen-xl my-8">
+      <div className="pt-20 px-8 flex flex-wrap justify-center gap-8 w-full max-w-max my-8">
         {filteredItems.map((item) => (
           <Listing
             key={item.id}

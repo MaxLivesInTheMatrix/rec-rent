@@ -28,7 +28,7 @@ export default function RootLayout({
           <RegisterModal />
           <Navbar />
           <SearchModal />
-          <main className="flex-grow container mx-auto px-4">
+          <main className="flex-grow container mx-auto px-2">
           {children}
           </main>
           <Footer />
