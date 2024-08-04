@@ -18,7 +18,7 @@ const Listing: React.FC<ListingProps> = ({
     id
 }) => {
     return (
-        <a href="/" className="w-80 rounded-3xl overflow-hidden shadow-lg text-white no-underline hover:bg-neutral-100">
+        <a href={`/listing/${id}`} className="w-80 rounded-3xl overflow-hidden shadow-lg text-white no-underline hover:bg-neutral-100">
             <div className="flex flex-col h-full">
                 <div className="w-full h-64">
                     <img

@@ -5,6 +5,7 @@ import SearchModal from "./components/models/searchmodel";
 import Navbar from "./components/navbar/NavBar";
 import ClientOnly from "./components/ClientOnly";
 import RegisterModal from "./components/models/RegisterModal";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Rec-Rent",
@@ -29,6 +30,7 @@ export default function RootLayout({
           <SearchModal />
         </ClientOnly>
         {children}
+        <Footer />
       </body>
     </html>
   );

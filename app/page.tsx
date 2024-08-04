@@ -16,20 +16,28 @@ export default function Home() {
     }
 
     const category = searchParams.get('category');
+    const locationValue = searchParams.get('locationValue');
     console.log("Category:", category);
+    console.log("Location Value:", locationValue);
+
+    let filtered = mock;
 
     if (category) {
-      const filtered = mock.filter(item => item.catagory === category);
-      setFilteredItems(filtered);
-    } else {
-      setFilteredItems(mock);
+      filtered = filtered.filter(item => item.catagory === category);
     }
+
+    if (locationValue) {
+      const locationValueLower = locationValue.toLowerCase();
+      filtered = filtered.filter(item => item.location?.toLowerCase().split(',')[0] === locationValueLower);
+    }
+
+    setFilteredItems(filtered);
   }, [searchParams]);
 
   return (
     <div className="pt-28 flex flex-col items-center">
       <div className="text-rose-500 text-2xl hidden">Hello Rent-Rec!</div>
-      <div className="pt-24 px-8 flex flex-wrap justify-center gap-8 w-full max-w-screen-xl">
+      <div className="pt-20 px-8 flex flex-wrap justify-center gap-8 w-full max-w-screen-xl my-8">
         {filteredItems.map((item) => (
           <Listing
             key={item.id}
