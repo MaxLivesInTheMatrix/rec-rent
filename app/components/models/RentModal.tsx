@@ -55,12 +55,10 @@ function RentModal({}: Props) {
     },
   });
 
-  const category = watch("category");
-  const location = watch("location");
-  const guestCount = watch("guestCount");
-  const roomCount = watch("roomCount");
-  const bathroomCount = watch("bathroomCount");
-  const imageSrc = watch("imageSrc");
+    const category = watch('category');
+    const location = watch('location');
+    const guestCount = watch('guestCount');
+    const imageSrc = watch('imageSrc');
 
   const Map = useMemo(
     () =>
@@ -181,20 +179,21 @@ function RentModal({}: Props) {
     );
   }
 
-  if (step === STEPS.IMAGES) {
+  if (step == STEPS.IMAGES){
     bodyContent = (
-      <div className="flex flex-col gap-8">
-        <Heading
-          title="Add a photo of your equipment"
-          subtitle="Show renters how it looks like!"
-        />
-        {/* <ImageUpload
-          onChange={(value) => setCustomValue("imageSrc", value)}
-          value={imageSrc}
-        /> */}
-      </div>
+        <div className="flex flex-col gap-8">
+            <Heading
+             title = "Add a photo of your rental!"
+             subtitle="Make sure it looks clean and usable!"
+             />
+             <ImageUpload
+              value = {imageSrc}
+              onChange={(value) => setCustomValue('imageSrc', value)}
+              
+              />
+        </div>
     );
-  }
+}
 
   if (step === STEPS.DESCRIPTION) {
     bodyContent = (
