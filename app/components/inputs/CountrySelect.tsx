@@ -1,6 +1,6 @@
 "use client";
 
-import useCities from "../../hook/useCities";
+import useCities from "../../hooks/useCities";
 import Select from "react-select";
 import Flag from "react-world-flags";
 import { useEffect, useState } from "react";

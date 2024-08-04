@@ -1,7 +1,7 @@
 "use client";
 
-import useCities from "../../hook/useCities";
-import useSearchModal from "../../hook/useSearchModal";
+import useCities from "../../hooks/useCities";
+import useSearchModal from "../../hooks/useSearchModal";
 import { differenceInDays } from "date-fns";
 import { useSearchParams } from "next/navigation";
 import { useMemo } from "react";

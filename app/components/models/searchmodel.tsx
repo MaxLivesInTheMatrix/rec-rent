@@ -1,7 +1,7 @@
 ﻿
 "use client";
 
-import useSearchModal from "../../hook/useSearchModal";
+import useSearchModal from "../../hooks/useSearchModal";
 import { formatISO } from "date-fns";
 import dynamic from "next/dynamic";
 import { useRouter, useSearchParams } from "next/navigation";
