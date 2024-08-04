@@ -8,19 +8,14 @@ import { SafeUser } from "@/app/types"
 import UserMenu from "./UserMenu";
 import {User} from '@prisma/client';
 
-interface UserMenuProps {
-    currentUser?: User | null
-}
-const UserMenu: React.FC<UserMenuProps>=({
-    currentUser
-}) => {
-interface NavbarProps {
-  currentUser?: SafeUser | null;
+interface NavbarProps{
+  currentUser?: User | null;
 }
 
 const Navbar: React.FC<NavbarProps> = ({
   currentUser,
 }) => {
+  console.log({currentUser});
   return ( 
     <div className="fixed w-full bg-white z-10 shadow-sm">
       <div
@@ -50,6 +45,4 @@ const Navbar: React.FC<NavbarProps> = ({
   </div>
   );
 }
-
-
 export default Navbar;
