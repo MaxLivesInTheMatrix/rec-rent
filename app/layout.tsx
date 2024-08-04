@@ -28,11 +28,11 @@ export default function RootLayout({
           <RegisterModal />
           <Navbar />
           <SearchModal />
-        </ClientOnly>
-        <main className="flex-grow container mx-auto px-4">
+          <main className="flex-grow container mx-auto px-4">
           {children}
-        </main>
-        <Footer />
+          </main>
+          <Footer />
+        </ClientOnly>
       </body>
     </html>
   );
