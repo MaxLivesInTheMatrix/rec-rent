@@ -9,6 +9,7 @@ import useLoginModal from "@/app/hooks/useLoginModal";
 import { signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { SafeUser } from "@/app/types";
+import useRentModal from "@/app/hooks/useRentModal";
 import {User} from '@prisma/client';
 
 interface UserMenuProps {
@@ -21,15 +22,33 @@ const UserMenu: React.FC<UserMenuProps> = ({
     const registerModal = useRegisterModal();
     const loginModal=useLoginModal();
     const [isOpen, setIsOpen] = useState(false);
+    const rentModel = useRentModal();
     const toggleOpen = useCallback(() => {
         setIsOpen(value => !value);
     }, []);
+
+    // const onRent = (() => {
+    //   // if (!currentUser) {
+    //   //   return loginModal.onOpen();
+    //   // }
+    //   console.log('renting out');
+  
+    //   return rentModel.onOpen();
+    // }, [rentModel]);
+    const onRent = useCallback(() => {
+      console.log('renting out');
+      if (!currentUser) {
+        return loginModal.onOpen();
+      }
+  
+      return rentModel.onOpen();
+    }, [currentUser, loginModal, rentModel]);
 
   return ( 
     <div className="relative">
       <div className="flex flex-row items-center gap-3">
         <div 
-          onClick={() => {}}
+          onClick={onRent}
           className="
             hidden
             md:block
@@ -105,7 +124,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 />
                 <MenuItem 
                   label="Rec-Rental your home" 
-                  onClick={() => {}}
+                  onClick={onRent}
                 />
                 <hr />
                 <MenuItem 
