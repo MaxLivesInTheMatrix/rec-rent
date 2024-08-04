@@ -13,6 +13,8 @@ import dynamic from "next/dynamic";
 import CountrySelect, { CitiesSelectValue } from "../inputs/CountrySelect";
 import Counter from "../inputs/Counter";
 
+import ImageUpload from "../inputs/ImageUpload";
+
 
 enum STEPS{
     CATEGORY = 0,
@@ -52,6 +54,7 @@ const RentModal = () => {
     const category = watch('category');
     const location = watch('location');
     const guestCount = watch('guestCount');
+    const imageSrc = watch('imageSrc');
 
     const Map = useMemo(
         () =>
@@ -144,6 +147,22 @@ const RentModal = () => {
                     value = {guestCount}
                     onChange={(value) => setCustomValue('guestCount', value)}
                     />
+            </div>
+        )
+    }
+
+    if (step == STEPS.IMAGES){
+        bodyContent = (
+            <div className="flex flex-col gap-8">
+                <Heading
+                 title = "Add a photo of your rental!"
+                 subtitle="Make sure it looks clean and usable!"
+                 />
+                 <ImageUpload
+                  value = {imageSrc}
+                  onChange={(value) => setCustomValue('imageSrc', value)}
+                  
+                  />
             </div>
         )
     }
