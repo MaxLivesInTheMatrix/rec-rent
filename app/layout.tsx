@@ -5,7 +5,8 @@ import SearchModal from "./components/models/searchmodel";
 import Navbar from "./components/navbar/NavBar";
 import ClientOnly from "./components/ClientOnly";
 import RegisterModal from "./components/models/RegisterModal";
-
+import LoginrModal from "./components/models/LoginModal";
+import getCurrentUser from "./actions/getCurrentUser";
 export const metadata = {
   title: "Rec-Rent",
   description: "Peer to peer recreational rentals!",
@@ -15,17 +16,20 @@ const font = Nunito({
   subsets: ["latin"],
 })
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
+  const currentUser = await getCurrentUser();
+
   return (
     <html lang="en">
       <body className={font.className}>
         <ClientOnly>
           <RegisterModal />
-          <Navbar />
+          <LoginrModal />
+          <Navbar currentUser={currentUser}/> 
           <SearchModal />
         </ClientOnly>
         {children}
