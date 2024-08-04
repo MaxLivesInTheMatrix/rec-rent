@@ -1,6 +1,7 @@
 'use client';
 
 import {useEffect,useState} from "react";
+import LoadingSpinner from "./LoadingSpinner";
 
 interface ClientOnlyProps{
     children:React.ReactNode;
@@ -14,7 +15,7 @@ const ClientOnly:React.FC<ClientOnlyProps> = ({
         setHasMounted(true);
     },[]);
     if(!hasMounted){
-        return null;
+        return <LoadingSpinner />;
     }
     return ( 
         <>

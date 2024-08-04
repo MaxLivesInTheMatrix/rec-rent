@@ -7,3 +7,27 @@ body,
 :root{
     height: 100%;
 }
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .spinner {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #83D252;
+    animation: bounce 1s infinite ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+}
