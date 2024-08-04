@@ -120,8 +120,7 @@ function SearchModal({}: Props) {
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Where do you wanna go?"
-        subtitle="Find the perfect location!"
+        title="Where are you adventuring?"
       />
       <CountrySelect
         value={location}
@@ -136,8 +135,8 @@ function SearchModal({}: Props) {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="When do you plan to go?"
-          subtitle="Make sure everyone is free!"
+          title="When are you adventuring?"
+          subtitle="Make sure everyone can join!"
         />
         <Calendar
           onChange={(value) => setDateRange(value.selection)}
@@ -150,7 +149,7 @@ function SearchModal({}: Props) {
   if (step === STEPS.INFO) {
     bodyContent = (
       <div className="flex flex-col gap-8">
-        <Heading title="More information" subtitle="Find your perfect place!" />
+        <Heading title="More information" subtitle="Find your ideal rental" />
         <Counter
           onChange={(value) => setGuestCount(value)}
           value={guestCount}
