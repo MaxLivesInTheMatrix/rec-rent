@@ -7,6 +7,7 @@ import ClientOnly from "./components/ClientOnly";
 import RegisterModal from "./components/models/RegisterModal";
 import LoginrModal from "./components/models/LoginModal";
 import getCurrentUser from "./actions/getCurrentUser";
+import RentModal from "./components/models/RentModal";
 export const metadata = {
   title: "Rec-Rent",
   description: "Peer to peer recreational rentals!",
@@ -28,6 +29,7 @@ export default async function RootLayout({
         <ClientOnly>
           <RegisterModal />
           <LoginrModal />
+          <RentModal />
           <Navbar currentUser={currentUser}/> 
           <SearchModal />
         </ClientOnly>

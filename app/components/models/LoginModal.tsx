@@ -9,6 +9,7 @@ import {
   useForm
 } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
+import { FaFacebookF } from "react-icons/fa6";
 import { AiFillGithub } from "react-icons/ai";
 import { useRouter } from "next/navigation";
 
@@ -104,13 +105,13 @@ const LoginModal = () => {
       />
       <Button 
         outline 
-        label="Continue with Github"
-        icon={AiFillGithub}
-        onClick={() => signIn('github')}
+        label="Continue with FaceBook"
+        icon={FaFacebookF}
+        onClick={() => signIn('facebook')}
       />
       <div className="
       text-neutral-500 text-center mt-4 font-light">
-        <p>First time using Airbnb?
+        <p>First time using RecRent?
           <span 
             onClick={onToggle} 
             className="
