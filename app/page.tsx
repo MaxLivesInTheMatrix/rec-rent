@@ -48,6 +48,7 @@ export default function Home() {
             price={item.price}
             imageUrl={item.imageUrl[0]}
             id={item.id}
+            searchParams={searchParams.toString()}
           />
         ))}
       </div>

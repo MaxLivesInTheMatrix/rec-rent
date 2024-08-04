@@ -6,6 +6,7 @@ interface ListingProps {
     price: number;
     imageUrl: string;
     id: number;
+    searchParams: string;
 }
 
 const Listing: React.FC<ListingProps> = ({ 
@@ -15,10 +16,11 @@ const Listing: React.FC<ListingProps> = ({
     location,
     price, 
     imageUrl,
-    id
+    id,
+    searchParams
 }) => {
     return (
-        <a href={`/listing/${id}`} className="w-80 rounded-3xl overflow-hidden shadow-lg text-white no-underline hover:bg-neutral-100">
+        <a href={`/listing/${id}?${searchParams}`} className="w-80 rounded-3xl overflow-hidden shadow-lg text-white no-underline hover:bg-neutral-100">
             <div className="flex flex-col h-full">
                 <div className="w-full h-64">
                     <img
