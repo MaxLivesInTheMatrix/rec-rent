@@ -22,8 +22,8 @@ export type CitiesSelectValue = {
 };
 
 type Props = {
-  value?: CountrySelectValue;
-  onChange: (value: CountrySelectValue) => void;
+  value?: CitiesSelectValue;
+  onChange: (value: CitiesSelectValue) => void;
   limit?: number;
 };
 
@@ -76,7 +76,7 @@ function CountrySelect({ value, onChange, limit = 50 }: Props) {
         options={options}
         value={value}
         onInputChange={handleInputChange}
-        onChange={(value) => onChange(value as CountrySelectValue)}
+        onChange={(value) => onChange(value as CitiesSelectValue)}
         formatOptionLabel={(option: any) => (
           <div className="flex flex-row items-center gap-3">
             <Flag code={option.value} className="w-5" />

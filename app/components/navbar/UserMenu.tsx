@@ -13,7 +13,7 @@ import useRentModal from "@/app/hooks/useRentModal";
 import {User} from '@prisma/client';
 
 interface UserMenuProps {
-    currentUser?: User|null
+    currentUser?: SafeUser | null
 }
 const UserMenu: React.FC<UserMenuProps> = ({
     currentUser
