@@ -23,7 +23,7 @@ const initialDateRange = {
 
 type Props = {
   reservations?: SafeReservation[];
-  listing: SafeListing & {
+    listing: SafeListing & {
     user: SafeUser;
   };
   currentUser?: SafeUser | null;

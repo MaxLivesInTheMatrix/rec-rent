@@ -24,6 +24,8 @@ export default async function getListingById(params: IParams) {
     return {
       ...listing,
       createdAt: listing.createdAt.toString(),
+      roomCount: 1,
+      bathroomCount: 1,
       user: {
         ...listing.user,
         createdAt: listing.user.createdAt.toString(),

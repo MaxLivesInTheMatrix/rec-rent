@@ -42,6 +42,8 @@ export default async function getReservation(params: IParams) {
       listing: {
         ...reservation.listing,
         createdAt: reservation.listing.createdAt.toISOString(),
+        roomCount: 1,
+        bathroomCount: 1,
       },
     }));
 

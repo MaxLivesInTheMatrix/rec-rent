@@ -8,7 +8,13 @@ interface City {
     admin1: string;
 }
 
-const cityData: City[] = cities as City[];
+const cityData: City[] = (cities as any[]).map(city => ({
+  country: city.country,
+  name: city.name,
+  lat: parseFloat(city.lat),
+  lng: parseFloat(city.lng),
+  admin1: city.admin1,
+}));
 
 const formattedCities = cityData.map((city) => ({
   country: city.country,
