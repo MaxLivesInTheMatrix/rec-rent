@@ -27,7 +27,7 @@
         "reviews": 954,
         "location": "Dreamland, CA",
         "price": 450,
-        "imageUrl": ["https://scontent-sjc3-1.xx.fbcdn.net/v/t31.18172-8/28516436_1725991080798417_3773207896027491208_o.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=AnZf30mLTCoQ7kNvgEzSCdk&_nc_ht=scontent-sjc3-1.xx&oh=00_AYDF7Om24X2lP7q2Ua4a_fXow5obLuPzyNmUD6Emn9QVhQ&oe=66D64EE5"],
+        "imageUrl": ["https://www.sefiles.net/merchant/975/images/large/N_D2_life_style_4_1.png"],
         "id": 231245,
         "catagory": "Bikes",
         "description": "Unlike most commuter bikes on the market that come with a standard 500W rear hub motor, Discover 2 has a 750W motor that offers a powerful peak output  And with 75Nm of torque, it can get you moving quickly, even with a heavy load. We tested it towing a trailer with a 880 lbs weight, which it managed no problem! With impressive torque, the motor effortlessly propels you up even the steepest hills without breaking a sweat. The battery is a class-leading 705.6Wh made with LG cells, which is why the Discover 2 can take you up to 75 miles on a single charge. There’s no better way to explore than with an e-bike, and with this much range, the adventures are endless! Riders can customize their experience with three power modes: Eco, Trail, and Boost, each offering five power levels for a total of 15 acceleration curves to give you just the amount of power you need and fine-tune your ride."
@@ -93,7 +93,7 @@
         "reviews": 654,
         "location": "Wellness Center, CA",
         "price": 60,
-        "imageUrl": ["https://www.kinsheyoga.com/cdn/shop/files/LongShot-Blue1jpeg.jpg?v=1712876494&width=1445"],
+        "imageUrl": ["https://m.media-amazon.com/images/I/713MD0kq2eL.jpg"],
         "id": 231250,
         "catagory": "Other",
         "description": "Enhance your yoga practice with this premium, non-slip yoga mat. Made from eco-friendly materials and designed for optimal comfort and durability."
@@ -104,7 +104,7 @@
         "reviews": 212,
         "location": "Miami, FL",
         "price": 12000,
-        "imageUrl": ["https://www.boatingmag.com/uploads/2023/11/BTGBG24-RUN-Yamaha-VX-CRUISER-HO-01-edit.jpg"],
+        "imageUrl": ["https://www.yamahawaverunners.com/globalassets/z-old/_waverunners/news--events/yamaha-vx-cruiser-ho-is-2019-watercraft-of-the-year_2.png"],
         "id": 231251,
         "catagory": "JetSki",
         "description": "Enjoy the waves with the powerful Yamaha VX Cruiser HO JetSki. With its advanced features and smooth performance, it’s perfect for water adventures."
@@ -115,7 +115,7 @@
         "reviews": 340,
         "location": "Denver, CO",
         "price": 8500,
-        "imageUrl": ["https://cdn.dealerspike.com/imglib/v1/800x600/imglib/Assets/Inventory/81/93/81932DCD-A2A0-45CB-A7CD-E52E7795AA43.jpg"],
+        "imageUrl": ["https://www.outdoorlife.com/wp-content/uploads/2024/01/IMG_9207.gif?quality=85&w=768"],
         "id": 231252,
         "catagory": "Dirtbike/ATV",
         "description": "Tackle tough terrains with the Polaris Sportsman 570 ATV. Designed for reliability and comfort, it’s the perfect ATV for any outdoor enthusiast."
@@ -148,7 +148,7 @@
         "reviews": 275,
         "location": "Salt Lake City, UT",
         "price": 14500,
-        "imageUrl": ["https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/11/05/110596F9-BCA7-49A6-9421-0292331920F6.jpg"],
+        "imageUrl": ["https://hips.hearstapps.com/hmg-prod/images/2025-ski-doo-mxz-x-rs-850-turbo-r-0094-661eb0ffce53e.jpg"],
         "id": 231255,
         "catagory": "Winter Sports",
         "description": "Hit the slopes with the Ski-Doo MXZ X 850 E-TEC. With top-notch performance and handling, it's the ultimate snowmobile for winter fun."
@@ -192,7 +192,7 @@
         "reviews": 190,
         "location": "Dallas, TX",
         "price": 3200,
-        "imageUrl": ["https://www.goodrichtrailers.com/webfiles/fnitools/albums/products/huge/d3c3e22a.jpg"],
+        "imageUrl": ["https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/34282/i/4678668/o/1_34282_4678668_289310087.jpg;width=650;height=487;scale=both"],
         "id": 231259,
         "catagory": "Trailer",
         "description": "The Aluma 6810H Utility Trailer is built for heavy-duty hauling. Durable, spacious, and easy to tow."
@@ -225,7 +225,7 @@
         "reviews": 301,
         "location": "Phoenix, AZ",
         "price": 23000,
-        "imageUrl": ["https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/31/EB/31EBC05B-5A7B-4B12-AE2A-AA3675E40F33.jpg"],
+        "imageUrl": ["https://media.superatv.com/media/catalog/product/c/a/can-am-maverick-x3-full-windshield-knb-7a_2.jpg?optimize=high&fit=bounds&height=&width=3840&quality=85&auto=webp&format=pjpg"],
         "id": 231262,
         "catagory": "Dirtbike/ATV",
         "description": "Dominate any terrain with the Can-Am Maverick X3 ATV. Engineered for extreme performance and durability."
